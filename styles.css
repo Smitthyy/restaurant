@@ -1,1 +1,150 @@
+/* reset */
+body,p,a,ul,li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+/* styles */
+li {
+    list-style-type: none;
+}
 
+/* fonts */
+h1,h3 {
+    font-size: 1.2em;
+}
+h2 {
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.1em;
+}
+/* mobile styles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+.site-nav ul {
+    display: none;
+}
+.hero {
+    background-image: url(./assets/hero_image.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero h1,h5{
+    font-size: larger;
+    font-family: sans-serif;
+}
+.button {
+    display: none;
+    align-self: center;
+    color: white;
+    border: solid 2px white;
+    padding: 6px 12px;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+}
+.button:hover {
+    color: black;
+    background: yellow;
+}
+#about {
+    text-align: center;
+    padding: 100px;
+    background-color: lightgrey;
+}
+#favourites {
+    text-align: center;
+}
+.menu a {
+    padding-top: 25px;
+    text-align: center;
+    grid-column: 1/9;
+}
+.menu img {
+    max-width: 50%;
+    height: auto;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    line-height: 25px;
+    background-color: lightgrey;
+}
+
+/* small tablet styles */
+
+@media screen and (min-width: 620px){
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .site-nav ul {
+        display: none;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .menu {
+        padding-top: 25px;
+    }
+
+    .menu a {
+        grid-column: span 2;
+    }
+
+}
+
+/* large tablets and laptops */
+
+@media screen and (min-width: 960px){
+
+    .site-nav ul {
+        display: flex;
+        grid-column: 6/9;
+        justify-content: flex-end;
+        align-self: center;
+        padding-right: 75px;
+        
+    }
+
+    .site-nav li {
+        margin-left: 20px;
+    }
+
+    .site-nav a {
+        color: white;
+        position: relative;
+    }
+    
+
+}
+
+/* desktop styles */
+
+@media screen and (min-width: 1200px){
+
+}
