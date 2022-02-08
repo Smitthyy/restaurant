@@ -10,6 +10,21 @@ li {
 }
 
 /* fonts */
+
+@font-face {
+    font-family: 'architects daughter' ;
+    src: url(./assets/font/Architects_Daughter/ArchitectsDaughter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'marker';
+    src: url(./assets/font/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+
+* {
+    font-family: 'architects daughter';
+}
+
 h1,h3 {
     font-size: 1.2em;
 }
@@ -32,7 +47,7 @@ h4 {
     background-image: url(./assets/hero_image.jpeg);
     background-size: cover;
     background-position: center;
-    height: 200px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,8 +55,11 @@ h4 {
     color: white;
 }
 .hero h1,h5{
-    font-size: larger;
-    font-family: sans-serif;
+    font-size: x-large;
+    font-family: 'marker';
+    font-size: 40px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
 }
 .button {
     display: none;
@@ -60,19 +78,32 @@ h4 {
 #about {
     text-align: center;
     padding: 100px;
-    background-color: lightgrey;
+    background-color: #dda15e;
 }
 #favourites {
     text-align: center;
+    padding-top: 100px;
+    background: #fefae0;
+}
+
+.menu {
+    padding-bottom: 100px;
 }
 .menu a {
     padding-top: 25px;
     text-align: center;
     grid-column: 1/9;
+    font-size: larger;
+    color: black;
 }
 .menu img {
     max-width: 50%;
     height: auto;
+    border-radius: 20px;
+}
+
+.menu p {
+    display: none;
 }
 
 #contact {
@@ -81,14 +112,17 @@ h4 {
     align-items: center;
     padding: 100px;
     text-align: center;
-    background-color: lightskyblue;
+    background-color: #606c38;
+    color: #fefae0;
+    font-size: x-large;
 }
 
 footer {
     text-align: center;
     padding: 25px;
     line-height: 25px;
-    background-color: lightgrey;
+    background-color: #283618;
+    color: #fefae0;
 }
 
 /* small tablet styles */
@@ -105,7 +139,7 @@ footer {
     }
 
     .hero {
-        height: 300px;
+        height: 500px;
     }
 
     .menu {
@@ -140,6 +174,14 @@ footer {
         position: relative;
     }
     
+    .menu p {
+        display: flex;
+        width: 350px;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
 
